@@ -31,8 +31,8 @@ CONFIG = {
 
     # --- Webhook Server (Pterodactyl Settings) ---
     "WEBHOOK_HOST": "0.0.0.0",
-    "WEBHOOK_PORT": "2379",        # আপনার সার্ভারের পোর্ট
-    "WEBHOOK_PATH": "/webhook",
+    ""WEBHOOK_PORT": os.environ.get("PORT", "2379"), # <--- এই লাইনটি পরিবর্তন করুন
+"WEBHOOK_PATH": "/webhook",
     "WEBHOOK_SECRET": "",          
 
     # --- Telegram ---
